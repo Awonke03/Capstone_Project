@@ -415,7 +415,7 @@ sunburst_fig.show()
 
 # Create the app
 app = dash.Dash(__name__, external_stylesheets=[dbc.themes.SLATE], suppress_callback_exceptions=True)
-
+server=app.server
 # Sidebar layout with full height and centered buttons
 sidebar = html.Div(
     [
