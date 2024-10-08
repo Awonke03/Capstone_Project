@@ -28,7 +28,7 @@ from dash.dependencies import Input, Output
 
 
 # Load the dataset
-df = pd.read_csv("cyberattack_distribution_2023.csv")
+df = pd.read_csv("https://raw.githubusercontent.com/Awonke03/Capstone_Project/main/cyberattack_distribution_2023.csv")
 
 # Create a bar chart
 fig3 = px.bar(
@@ -214,7 +214,7 @@ fig1.update_layout(
 fig1.show()
 
 # Load data into pandas dataframe
-phishing_df = pd.read_csv('phishing_incidents.csv')
+phishing_df = pd.read_csv('https://raw.githubusercontent.com/Awonke03/Capstone_Project/main/phishing_incidents.csv')
 
 # Identify the index of the category with the highest incidents
 max_index = phishing_df['Incidents Count'].idxmax()
@@ -270,7 +270,7 @@ plt.title("Proportional Distribution of Cybercrime Incidents", color='white')
 plt.show()
 
 # Define the file path for the dataset
-file_path = 'Cyber_Threat_Rate.csv'
+file_path = 'https://raw.githubusercontent.com/Awonke03/Capstone_Project/main/Cyber_Threat_Rate.csv'
 
 # Read the data from the CSV file
 data = pd.read_csv(file_path)
@@ -331,7 +331,7 @@ import pandas as pd
 import plotly.graph_objects as go
 
 # Load the data from the CSV file
-df = pd.read_csv('cybercrime_impact.csv')
+df = pd.read_csv('https://raw.githubusercontent.com/Awonke03/Capstone_Project/main/cybercrime_impact.csv')
 
 # Convert Loss to numerical values for plotting (in dollars)
 def convert_loss_to_numeric(loss_str):
@@ -391,7 +391,7 @@ fig4.update_layout(
 # Show the figure
 fig4.show()
 
-df = pd.read_csv('cybercrime_victims_by_year_age.csv')
+df = pd.read_csv('https://raw.githubusercontent.com/Awonke03/Capstone_Project/main/cybercrime_victims_by_year_age.csv')
 
 # Create the Sunburst Chart
 sunburst_fig = px.sunburst(df,
